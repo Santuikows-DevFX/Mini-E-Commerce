@@ -1,0 +1,17 @@
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\bin\Debug\LoginBasic.exe.config
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\bin\Debug\LoginBasic.exe
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\bin\Debug\LoginBasic.pdb
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\bin\Debug\MySql.Data.dll
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\obj\Debug\LoginBasic.csproj.AssemblyReference.cache
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\obj\Debug\LoginBasic.csproj.SuggestedBindingRedirects.cache
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\obj\Debug\LoginBasic.Form1.resources
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\obj\Debug\LoginBasic.Properties.Resources.resources
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\obj\Debug\LoginBasic.csproj.GenerateResource.cache
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\obj\Debug\LoginBasic.csproj.CoreCompileInputs.cache
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\obj\Debug\LoginBasic.csproj.CopyComplete
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\obj\Debug\LoginBasic.exe
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\obj\Debug\LoginBasic.pdb
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\obj\Debug\LoginBasic.UserInterface.resources
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\obj\Debug\LoginBasic.UserCart.resources
