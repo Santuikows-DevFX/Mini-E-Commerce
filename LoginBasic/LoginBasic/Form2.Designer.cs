@@ -29,13 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.viewCart = new System.Windows.Forms.Button();
             this.productPicBox = new System.Windows.Forms.PictureBox();
             this.addCartBtn = new System.Windows.Forms.Button();
             this.productName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.unitPrice = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.viewCart = new System.Windows.Forms.Button();
+            this.dashBoardBtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.productPicBox)).BeginInit();
             this.SuspendLayout();
@@ -43,11 +44,27 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Coral;
+            this.panel1.Controls.Add(this.dashBoardBtn);
             this.panel1.Controls.Add(this.viewCart);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1159, 100);
             this.panel1.TabIndex = 0;
+            // 
+            // viewCart
+            // 
+            this.viewCart.BackColor = System.Drawing.Color.Tomato;
+            this.viewCart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.viewCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.viewCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewCart.ForeColor = System.Drawing.Color.Snow;
+            this.viewCart.Location = new System.Drawing.Point(946, 22);
+            this.viewCart.Name = "viewCart";
+            this.viewCart.Size = new System.Drawing.Size(185, 62);
+            this.viewCart.TabIndex = 7;
+            this.viewCart.Text = "View Cart";
+            this.viewCart.UseVisualStyleBackColor = false;
+            this.viewCart.Click += new System.EventHandler(this.viewCart_Click);
             // 
             // productPicBox
             // 
@@ -117,20 +134,20 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "P";
             // 
-            // viewCart
+            // dashBoardBtn
             // 
-            this.viewCart.BackColor = System.Drawing.Color.Tomato;
-            this.viewCart.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.viewCart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.viewCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewCart.ForeColor = System.Drawing.Color.Snow;
-            this.viewCart.Location = new System.Drawing.Point(946, 22);
-            this.viewCart.Name = "viewCart";
-            this.viewCart.Size = new System.Drawing.Size(185, 62);
-            this.viewCart.TabIndex = 7;
-            this.viewCart.Text = "View Cart";
-            this.viewCart.UseVisualStyleBackColor = false;
-            this.viewCart.Click += new System.EventHandler(this.viewCart_Click);
+            this.dashBoardBtn.BackColor = System.Drawing.Color.Tomato;
+            this.dashBoardBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dashBoardBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dashBoardBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashBoardBtn.ForeColor = System.Drawing.Color.Snow;
+            this.dashBoardBtn.Location = new System.Drawing.Point(755, 22);
+            this.dashBoardBtn.Name = "dashBoardBtn";
+            this.dashBoardBtn.Size = new System.Drawing.Size(185, 62);
+            this.dashBoardBtn.TabIndex = 8;
+            this.dashBoardBtn.Text = "Dash Board";
+            this.dashBoardBtn.UseVisualStyleBackColor = false;
+            this.dashBoardBtn.Click += new System.EventHandler(this.dashBoardBtn_Click);
             // 
             // UserInterface
             // 
@@ -165,5 +182,6 @@
         private System.Windows.Forms.Label unitPrice;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button viewCart;
+        private System.Windows.Forms.Button dashBoardBtn;
     }
 }

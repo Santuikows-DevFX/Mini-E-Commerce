@@ -48,12 +48,20 @@ namespace LoginBasic
 
                 if (resultSet.HasRows) //HasRows checks if the data exists in the table
                 {
+                    if (resultSet.GetString("role").Equals("admin"))
+                    {
+                        MessageBox.Show("ADMIN KA");
+                    }else
+                    {
+                        MessageBox.Show("USER KA");
 
-                    user.UserID = resultSet.GetInt32("userID");
-                    userIntef = new UserInterface(user.UserID);
-                    this.Hide(); //hide current form
-                    userIntef.ShowDialog(); //show the next form
-                    this.Close();//close this form
+                        user.UserID = resultSet.GetInt32("userID");
+                        userIntef = new UserInterface(user.UserID);
+                        this.Hide(); //hide current form
+                        userIntef.ShowDialog(); //show the next form
+                        this.Close();//close this form
+                    }
+        
                 }
                 else
                 {
@@ -63,6 +71,7 @@ namespace LoginBasic
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.ToString());
             }
 
             conn.Close();
@@ -70,20 +79,22 @@ namespace LoginBasic
     }
 }
 
-namespace UserInformation //to get the userID
+namespace UserInformation //user information encapsulation
 {
     public class User
     {
         int userID = 0;
-
+        string userName, userPass;
         public User()
         {
             this.userID = 0;
         }
 
-        public User(int userID) 
+        public User(int userID, string userName, string userPass) 
         {
             this.userID = userID;
+            this.userName = userName;
+            this.userPass = userPass;
         }
 
         public int UserID
@@ -96,6 +107,18 @@ namespace UserInformation //to get the userID
             {
                 this.userID = value;
             }
+        }
+
+        public string UserName
+        {
+            get { return this.userName; }
+            set { this.userName = value; }
+        }
+
+        public string UserPass
+        {
+            get { return this.userPass; }
+            set { this.userPass = value; }
         }
     }
 }

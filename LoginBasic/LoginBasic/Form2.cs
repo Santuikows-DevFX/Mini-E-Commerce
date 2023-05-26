@@ -18,6 +18,7 @@ namespace LoginBasic
     {
 
         UserCart cart;
+        Form4 userDash;
 
         Config dbConfig;
         MySqlConnection conn;
@@ -72,8 +73,6 @@ namespace LoginBasic
             {
                 MessageBox.Show(ex.ToString());
             }
-
-
         }
 
         private void viewCart_Click(object sender, EventArgs e)
@@ -81,6 +80,14 @@ namespace LoginBasic
             this.Hide();
             cart = new UserCart(UserID);
             cart.ShowDialog();
+            this.Close();
+        }
+
+        private void dashBoardBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            userDash = new Form4(UserID);
+            userDash.ShowDialog();
             this.Close();
         }
     }

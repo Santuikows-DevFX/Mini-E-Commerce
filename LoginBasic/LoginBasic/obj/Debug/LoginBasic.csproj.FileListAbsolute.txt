@@ -15,3 +15,5 @@ C:\Users\joshu\source\repos\LoginBasic\LoginBasic\obj\Debug\LoginBasic.UserInter
 C:\Users\joshu\source\repos\LoginBasic\LoginBasic\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
 C:\Users\joshu\source\repos\LoginBasic\LoginBasic\bin\Debug\ComponentFactory.Krypton.Toolkit.pdb
 C:\Users\joshu\source\repos\LoginBasic\LoginBasic\obj\Debug\LoginBasic.UserCart.resources
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\obj\Debug\LoginBasic.Form4.resources
+C:\Users\joshu\source\repos\LoginBasic\LoginBasic\obj\Debug\LoginBasic.Form5.resources

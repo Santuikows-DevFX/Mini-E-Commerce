@@ -30,11 +30,11 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.cartDataGrid = new System.Windows.Forms.DataGridView();
-            this.checkOutBtn = new System.Windows.Forms.Button();
             this.productName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.unitPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TotalPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.checkOutBtn = new System.Windows.Forms.Button();
             this.qntBox = new System.Windows.Forms.TextBox();
             this.decrementQnt = new System.Windows.Forms.Button();
             this.incremenetQnt = new System.Windows.Forms.Button();
@@ -66,19 +66,6 @@
             this.cartDataGrid.Size = new System.Drawing.Size(1053, 479);
             this.cartDataGrid.TabIndex = 1;
             // 
-            // checkOutBtn
-            // 
-            this.checkOutBtn.BackColor = System.Drawing.Color.Tomato;
-            this.checkOutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkOutBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkOutBtn.ForeColor = System.Drawing.Color.Snow;
-            this.checkOutBtn.Location = new System.Drawing.Point(804, 582);
-            this.checkOutBtn.Name = "checkOutBtn";
-            this.checkOutBtn.Size = new System.Drawing.Size(280, 71);
-            this.checkOutBtn.TabIndex = 2;
-            this.checkOutBtn.Text = "Proceed to Checkout";
-            this.checkOutBtn.UseVisualStyleBackColor = false;
-            // 
             // productName
             // 
             this.productName.HeaderText = "Product Name";
@@ -106,6 +93,20 @@
             this.TotalPrice.MinimumWidth = 8;
             this.TotalPrice.Name = "TotalPrice";
             this.TotalPrice.Width = 150;
+            // 
+            // checkOutBtn
+            // 
+            this.checkOutBtn.BackColor = System.Drawing.Color.Tomato;
+            this.checkOutBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkOutBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkOutBtn.ForeColor = System.Drawing.Color.Snow;
+            this.checkOutBtn.Location = new System.Drawing.Point(804, 582);
+            this.checkOutBtn.Name = "checkOutBtn";
+            this.checkOutBtn.Size = new System.Drawing.Size(280, 71);
+            this.checkOutBtn.TabIndex = 2;
+            this.checkOutBtn.Text = "Proceed to Checkout";
+            this.checkOutBtn.UseVisualStyleBackColor = false;
+            this.checkOutBtn.Click += new System.EventHandler(this.checkOutBtn_Click);
             // 
             // qntBox
             // 

@@ -4,11 +4,14 @@ using System.Windows.Forms;
 using Configuration;
 using MySql.Data.MySqlClient;
 
+
+
 namespace LoginBasic
 {
     public partial class UserCart : Form
     {
 
+        Form5 checkOut;
         Config dbConfig;
         MySqlConnection conn;
 
@@ -142,5 +145,13 @@ namespace LoginBasic
 
     
         } //same on decerement but this time it adds
+
+        private void checkOutBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            checkOut = new Form5(UserID);
+            checkOut.ShowDialog();
+            this.Close();
+        }
     }
 }
